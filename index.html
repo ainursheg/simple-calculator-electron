@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200, 400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class='container'>
+        <div id='calculator'>
+        
+          <header id="titlebar">
+            <div id="window-title">
+              <span style="font-family: 'Segoe MDL2 Assets', sans-serif;">&#xE8EF;  </span>
+              <span>Simple Calculator</span>
+            </div>
+            <div id="drag-region">
+              <div id="window-controls">
+                <div class="button" id="min-button">
+                  <span>&#xE921;</span>
+                </div>
+                <div class="button" id="close-button">
+                  <span>&#xE8BB;</span>
+                </div>
+              </div>
+            </div>
+          </header>
+          <!-- ENTRY BOX -->
+      
+          <div class="entrybox text-right"><div class="input" id="input"></div></div>
+      
+          <!-- BUTTONS -->
+      
+          <div id='buttons'>
+      
+            <div class='red button' id="clear" ><div>AC</div> </div>
+            <div class='red button' id="clearE"><div>CE</div></div>
+            <div class="operators button" ><div>&divide;</div></div>
+            <div class="operators button" ><div>&times;</div></div>
+      
+            <div class="numbers button" ><div>7</div></div>
+            <div class="numbers button" ><div>8</div></div>
+            <div class="numbers button" ><div>9</div></div>
+            <div class="operators button" ><div>-</div></div>
+      
+            <div class="numbers button" ><div>4</div></div>
+            <div class="numbers button" ><div>5</div></div>
+            <div class="numbers button" ><div>6</div></div>
+            <div class="operators button"><div>+</div></div >
+      
+      
+            <div class="numbers button" ><div>1</div></div>
+            <div class="numbers button"><div>2</div></div>
+            <div class="numbers button" ><div>3</div></div>
+      
+            <div class="numbers button" id='zeroButton'><div>0</div></div>
+            <div class="button numbers"><div>.</div></div>
+            <div class="button" id='result'><div>=</div></d>
+      
+          </div>
+          <!-- end buttons -->
+        </div>
+        <!-- end calculator -->
+      </div>
+      <!-- end container -->
+      
+      <script src="App.js"></script>
+      <script>
+        require('./renderer.js');
+      </script>
+</body>
+</html>
